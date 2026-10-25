@@ -1,0 +1,25 @@
+---
+description: Working on the Data SL Consulting toolkit (datasl CLI and SDKs, agent skill, plugin manifests) or writing code that calls the Data SL Consulting public API or MCP server
+globs: ["js/**", "python/**", "skills/**", "*.json"]
+alwaysApply: false
+---
+
+# Data SL Consulting toolkit
+
+Full instructions: see `AGENTS.md` at the repository root.
+
+## API facts
+
+- REST base URL: `https://data-slconsulting.com/wp-json/datasl/v1` (read-only, public, no authentication). OpenAPI 3.1: https://data-slconsulting.com/openapi.json
+- Routes: `GET /offres` (filters `cible`, `categorie`, `champs`), `GET /offres/{slug}`, `GET /cabinet`, `GET /contact`; search: `GET /wp-json/wp/v2/search?search=...`
+- MCP server: `https://data-slconsulting.com/api/mcp-server` (Streamable HTTP; tools `get_offers`, `search_site`, `fetch_page`).
+- Errors: JSON `{"code", "message", "data": {"status", "hint"}}`; show `hint` to the user.
+- Rate limit: 120 requests per minute per IP (`RateLimit-Policy`, `RateLimit` headers); on 429, wait `Retry-After` seconds.
+
+## Rules
+
+- Keep `js/` and `python/` dependency-free and behaviourally identical (same commands, `--json` output, exit codes 0/1/2).
+- Validate inputs before any network call; `lire` only reads pages of data-slconsulting.com.
+- Never hard-code prices or offers: the API is the source of truth.
+- User-facing text stays in French.
+- Run `cd js && npm test` and `cd python && PYTHONPATH=src python -m unittest discover -s tests` before proposing a change.

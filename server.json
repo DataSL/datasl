@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.data-slconsulting/site",
+  "title": "Data SL Consulting",
+  "description": "Offres, prix publics et contenus de Data SL Consulting, conseil data et IA à Paris.",
+  "version": "1.0.0",
+  "websiteUrl": "https://data-slconsulting.com/developers/",
+  "icons": [
+    {"src": "https://data-slconsulting.com/wp-content/uploads/2025/08/Favicon.svg", "mimeType": "image/svg+xml", "sizes": ["any"]}
+  ],
+  "remotes": [
+    {"type": "streamable-http", "url": "https://data-slconsulting.com/api/mcp-server"}
+  ]
+}
