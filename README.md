@@ -12,6 +12,8 @@ Everything here is read-only, public and needs no API key.
 | `plugin.json`, `mcp.json` | [Agent Plugins](https://agent-plugins.org/) manifest: the skill plus the MCP server |
 | `.claude-plugin/`, `.mcp.json` | Same bundle for Claude Code |
 | [`AGENTS.md`](AGENTS.md) | Instructions for AI coding agents |
+| `CLAUDE.md`, `.cursor/rules/`, `.windsurf/rules/` | The same instructions for Claude Code, Cursor and Windsurf |
+| [`server.json`](server.json) | Entry of the MCP server in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/com.data-slconsulting%2Fsite/versions/latest) (`com.data-slconsulting/site`) |
 
 ## Quick start
 
