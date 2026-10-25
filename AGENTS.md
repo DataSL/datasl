@@ -33,8 +33,8 @@ The official, public toolkit of [Data SL Consulting](https://data-slconsulting.c
 
 ```bash
 cd js && npm test                       # offline, against a local mock server
-cd python && python -m unittest discover -s tests   # offline
-DATASL_LIVE=1 python -m unittest tests.test_live    # a few requests to the real site
+cd python && PYTHONPATH=src python -m unittest discover -s tests   # offline
+cd python && DATASL_LIVE=1 PYTHONPATH=src python -m unittest tests.test_live   # a few requests to the real site
 ```
 
 Run the offline suites before any change. Keep live tests to a handful of requests (the site is a small WordPress install; never send bursts of concurrent requests).

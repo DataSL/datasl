@@ -26,6 +26,7 @@ Homepage = "https://data-slconsulting.com/developers/"
 Documentation = "https://data-slconsulting.com/developers/"
 "API (OpenAPI)" = "https://data-slconsulting.com/openapi.json"
 "Paquet npm" = "https://www.npmjs.com/package/datasl"
+Source = "https://github.com/DataSL/datasl"
 
 [project.scripts]
 datasl = "datasl.cli:main"

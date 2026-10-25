@@ -14,6 +14,11 @@
     "conseil-data"
   ],
   "homepage": "https://data-slconsulting.com/developers/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DataSL/datasl.git",
+    "directory": "js"
+  },
   "bugs": {
     "url": "https://data-slconsulting.com/contact/",
     "email": "contact@data-slconsulting.com"
