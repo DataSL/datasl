@@ -1,0 +1,45 @@
+{
+  "name": "datasl",
+  "version": "1.0.0",
+  "description": "CLI et client JavaScript officiels de Data SL Consulting (conseil data et IA, Paris) : offres, prix publics, coordonnées, recherche et lecture des guides en Markdown.",
+  "keywords": [
+    "data-sl-consulting",
+    "datasl",
+    "cli",
+    "sdk",
+    "ai-agents",
+    "mcp",
+    "pennylane",
+    "power-bi",
+    "conseil-data"
+  ],
+  "homepage": "https://data-slconsulting.com/developers/",
+  "bugs": {
+    "url": "https://data-slconsulting.com/contact/",
+    "email": "contact@data-slconsulting.com"
+  },
+  "author": "Data SL Consulting <contact@data-slconsulting.com> (https://data-slconsulting.com/)",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/client.js",
+  "exports": {
+    ".": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "datasl": "bin/datasl.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/cli.test.js",
+    "test:live": "node --test test/live.test.js"
+  }
+}

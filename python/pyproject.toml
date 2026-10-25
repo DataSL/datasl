@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datasl"
+version = "1.0.0"
+description = "CLI et client Python officiels de Data SL Consulting (conseil data et IA, Paris) : offres, prix publics, coordonnées, recherche et lecture des guides en Markdown."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Data SL Consulting", email = "contact@data-slconsulting.com" }]
+keywords = ["data-sl-consulting", "datasl", "cli", "sdk", "ai-agents", "mcp", "pennylane", "power-bi"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Natural Language :: French",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://data-slconsulting.com/developers/"
+Documentation = "https://data-slconsulting.com/developers/"
+"API (OpenAPI)" = "https://data-slconsulting.com/openapi.json"
+"Paquet npm" = "https://www.npmjs.com/package/datasl"
+
+[project.scripts]
+datasl = "datasl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

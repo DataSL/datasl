@@ -1,0 +1,14 @@
+{
+  "name": "datasl",
+  "owner": {
+    "name": "Data SL Consulting",
+    "email": "contact@data-slconsulting.com"
+  },
+  "plugins": [
+    {
+      "name": "datasl",
+      "source": "./",
+      "description": "Agent skill and public read-only MCP server of Data SL Consulting: offers, public prices, company facts, contact details and site content."
+    }
+  ]
+}

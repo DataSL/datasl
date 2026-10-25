@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "data-slconsulting": {
+      "type": "streamable-http",
+      "url": "https://data-slconsulting.com/api/mcp-server"
+    }
+  }
+}

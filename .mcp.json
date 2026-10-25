@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "data-slconsulting": {
+      "type": "http",
+      "url": "https://data-slconsulting.com/api/mcp-server"
+    }
+  }
+}

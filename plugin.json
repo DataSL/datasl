@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "datasl",
+  "version": "1.0.0",
+  "description": "Data SL Consulting (Paris data and AI consultancy): agent skill and public read-only MCP server for its offers, public prices, company facts, contact details and site content.",
+  "author": {
+    "name": "Data SL Consulting",
+    "email": "contact@data-slconsulting.com",
+    "url": "https://data-slconsulting.com/"
+  },
+  "homepage": "https://data-slconsulting.com/developers/",
+  "repository": "https://github.com/DataSL/datasl",
+  "license": "MIT",
+  "keywords": ["data-sl-consulting", "mcp", "agent-skills", "pennylane", "power-bi", "consulting", "france"]
+}
